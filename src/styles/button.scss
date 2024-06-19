@@ -1,0 +1,16 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid;
+  padding: 6px 16px;
+  background-color: var(--block-background-color);
+  cursor: pointer;
+
+  &-label {
+    white-space: nowrap;
+  }
+}

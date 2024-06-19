@@ -1,0 +1,44 @@
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &-new {
+    background-color: var(--block-background-color);
+    box-shadow: 0 4px 19px -7px rgba(0, 0, 0, 0.3019607843);
+    border-radius: 14px;
+    padding: 12px;
+
+    &-input {
+      width: 100%;
+      border: 1px solid var(--sub-text-color);
+      color: var(--text-color);
+    }
+
+    &-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+
+      &-add {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: var(--purple);
+        font-weight: bold;
+        font-size: 14px;
+        border: 2px solid var(--purple);
+        border-radius: 999px;
+        padding: 6px 16px;
+        background-color: var(--block-background-color);
+        cursor: pointer;
+      }
+
+      &-sort {
+        border: 1px solid var(--text-color);
+        color: var(--text-color);
+      }
+    }
+  }
+}

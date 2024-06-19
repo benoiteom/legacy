@@ -1,0 +1,23 @@
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+
+  &-wrapper {
+    max-width: 250px;
+  }
+
+  &-time {
+    width: 103.5px;
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  &-children {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}

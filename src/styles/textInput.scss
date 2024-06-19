@@ -1,0 +1,59 @@
+.text-input {
+  position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  &-input {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    padding: 0 8px;
+    transition: ease-in-out 0.2s;
+    border-width: 2px;
+    border-style: solid;
+    background-color: var(--block-background-color);
+
+    &:focus ~ .text-input-label {
+      top: 0;
+      padding: 0 8px;
+      transform: translate(-6px, -50%) scale(0.75);
+    }
+
+    &:valid ~ .text-input-label {
+      top: 0;
+      padding: 0 8px;
+      transform: translate(-6px, -50%) scale(0.75);
+    }
+  }
+
+  &-label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 14px;
+    transform: translateY(-50%);
+    transition: ease-in-out 0.2s;
+    margin: 0 8px;
+    padding: 0 2px;
+    color: var(--sub-text-color);
+    background-color: var(--block-background-color);
+    pointer-events: none;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+
+  &-submit {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    top: 50%;
+    right: 0;
+    padding: 0 11px 0 9px;
+    transform: translateY(-50%);
+    color: var(--sub-text-color);
+    border-left: 2px solid;
+    cursor: pointer;
+  }
+}

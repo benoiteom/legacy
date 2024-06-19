@@ -1,0 +1,40 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+
+  & .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+
+    &-left {
+      height: 100%;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      &-top-box {
+        flex-grow: 1;
+        background-color: var(--block-background-color);
+        box-shadow: 0 4px 19px -7px rgba(0, 0, 0, 0.3019607843);
+        border-radius: 14px;
+        padding: 20px;
+      }
+
+      &-bottom-box {
+        background-color: var(--block-background-color);
+        box-shadow: 0 4px 19px -7px rgba(0, 0, 0, 0.3019607843);
+        border-radius: 14px;
+        padding: 20px;
+        min-height: 120px;
+      }
+    }
+
+    &-right-box {
+      flex-grow: 1;
+      max-width: 360px;
+    }
+  }
+}

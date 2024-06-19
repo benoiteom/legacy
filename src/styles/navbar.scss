@@ -1,0 +1,92 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin: 24px 24px 0 24px;
+  gap: 32px;
+
+  &-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+    background-color: var(--block-background-color);
+    box-shadow: 0 4px 19px -7px #0000004d;
+  }
+
+  &-icons {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 64px;
+    background-color: var(--block-background-color);
+    border-radius: 14px;
+    box-shadow: 0 4px 19px -7px #635a5a4d;
+    padding: 20px 0;
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+
+      &-icon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        background-color: var(--block-background-color);
+        transition: ease-in-out 0.2s;
+        z-index: 0;
+
+        & > a > svg {
+          margin-top: 2.5px;
+        }
+
+        &-active { 
+          z-index: 1;
+          background-color: var(--blue);
+          box-shadow: 0 6px 15px -4px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+
+      &-icon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        background-color: var(--block-background-color);
+        transition: ease-in-out 0.2s;
+        z-index: 0;
+
+        & > a > svg {
+          margin-top: 2.5px;
+        }
+
+        &-active { 
+          z-index: 1;
+          background-color: var(--blue);
+          box-shadow: 0 6px 15px -4px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}

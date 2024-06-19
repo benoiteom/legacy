@@ -1,0 +1,45 @@
+@import './styles/vars.scss';
+@import './styles/app.scss';
+@import './styles/home.scss';
+@import './styles/weather.scss';
+@import './styles/navbar.scss';
+@import './styles/tasks.scss';
+@import './styles/work.scss';
+@import './styles/header.scss';
+@import './styles/bento.scss';
+@import './styles/timer.scss';
+@import './styles/todo.scss';
+@import './styles/tasks.scss';
+@import './styles/task.scss';
+@import './styles/textInput.scss';
+@import './styles/dropdownInput.scss';
+@import './styles/reminders.scss';
+@import './styles/notes.scss';
+@import './styles/button.scss';
+@import './styles/goals.scss';
+@import './styles/milestones.scss';
+
+@font-face {
+  font-family: 'Primary';
+  src: url('../public/assets/fonts/Manrope-VariableFont_wght.ttf');
+}
+
+body {
+  font-family: 'Primary';
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.25px;
+  margin: 0;
+  background-color: var(--app-background-color);
+  height: 100vh;
+
+  // TODO: clean up, wherever this div is coming from
+  & > div {
+    height: 100%;
+  }
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

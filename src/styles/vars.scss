@@ -1,0 +1,29 @@
+:root {
+  --app-background-color: #F7F9FA;
+  --block-background-color: #ffffff;
+  --text-color: #262626;
+  --sub-text-color: #C9C9C9;
+  --light-gray: #E8E8E8;
+  --blue: #79FDFF;
+  --green: #2AF7E2;
+  --pink: #EC52CA;
+  --red: #FF3D60;
+  --purple: #7416EC;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+[data-theme="dark"] {
+  --app-background-color: #414345;
+  --block-background-color: #121212;
+  --text-color: #F8F8F8;
+  --sub-text-color: #787878;
+  --light-gray: #464646;
+  --blue: #17E5E8;
+  --green: #1AB7A7;
+  --pink: #E90DDC;
+  --red: #D1003E;
+  --purple: #7416EC;
+  --black: #FFFFFF;
+  --white: #000000;
+}
